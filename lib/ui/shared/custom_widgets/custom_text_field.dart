@@ -16,7 +16,7 @@ class CustomTextFeild extends StatelessWidget {
       required this.hintText,
       this.sufIcon,
       this.suffColor,
-      this.preColor = AppColors.blueColor,
+      this.preColor = AppColors.blackColor,
       this.controller,
       this.validator});
 

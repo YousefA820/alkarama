@@ -5,7 +5,6 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 
-
 import 'package:sp1_e_commerce/core/data/repository/shared_prefrence_repository.dart';
 import 'package:sp1_e_commerce/core/services/cart_service.dart';
 import 'package:sp1_e_commerce/core/services/connectivity_service.dart';

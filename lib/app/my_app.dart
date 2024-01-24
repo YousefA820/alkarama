@@ -7,8 +7,8 @@ import 'package:sp1_e_commerce/core/data/repository/shared_prefrence_repository.
 import 'package:sp1_e_commerce/core/services/connectivity_service.dart';
 import 'package:sp1_e_commerce/core/translation/app_translation.dart';
 import 'package:sp1_e_commerce/ui/shared/utils.dart';
-
-import 'package:sp1_e_commerce/ui/views/splash_view/splash_view.dart';
+import 'package:sp1_e_commerce/ui/views/main_view/home_view/home_view.dart';
+import 'package:sp1_e_commerce/ui/views/main_view/main_view.dart';
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: SplashView(),
+        home: MainView(),
       ),
     );
   }
