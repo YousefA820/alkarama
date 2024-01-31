@@ -7,7 +7,7 @@ import 'package:sp1_e_commerce/core/data/repository/prodcut_repository.dart';
 import 'package:sp1_e_commerce/ui/shared/custom_widgets/custom_toast.dart';
 import 'package:sp1_e_commerce/ui/shared/utils.dart';
 
-class HomeController extends GetxController {
+class HomeViewController extends GetxController {
   RxList<ProductModel> productList = <ProductModel>[].obs;
   RxInt count = 0.obs;
 

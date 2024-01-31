@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
       initialData: ConnectivityStatus.ONLINE,
       child: GetMaterialApp(
         locale: getLocal(),
+        
         translations: AppTranslation(),
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,

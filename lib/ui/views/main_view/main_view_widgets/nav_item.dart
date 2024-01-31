@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:sp1_e_commerce/ui/shared/colors.dart';
 import 'package:sp1_e_commerce/ui/shared/utils.dart';
 
 class Item extends StatefulWidget {
-  final IconData icon;
+  final String icon;
   final String text;
   final bool? isSelected;
   final Function onTap;
@@ -31,20 +32,19 @@ class _ItemState extends State<Item> {
       child: Padding(
         padding: EdgeInsetsDirectional.only(top: screenWidth(80)),
         child: Container(
-          width: screenWidth(8),
+          width: screenWidth(6),
           child: Column(
             children: [
-              Icon(
-                widget.icon,
+              SvgPicture.asset(
+                'assets/images/svgs/${widget.icon}.svg',
                 color: widget.isSelected!
                     ? AppColors.orangeColor
                     : AppColors.whiteColor,
-                size: screenWidth(11),
               ),
               Text(
                 widget.text,
                 style: TextStyle(
-                  fontSize: screenWidth(25),
+                  fontSize: screenWidth(28),
                   color: widget.isSelected!
                       ? AppColors.orangeColor
                       : AppColors.whiteColor,
